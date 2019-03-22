@@ -10,32 +10,21 @@ For å legge til rette for at man skal kunne flytte seg mellom Villages så foku
 **Omtrentlig tidsbruk:** 30-45 min
 
 
-## Ressurser
-- Offisell nettside for Rust: https://www.rust-lang.org
-- https://www.rust-lang.org/what/wasm
+> The dream of WebAssembly is not to kill JavaScript but to work alongside of it, to help super charge processing-heavy or low-level tasks — tasks that benefit from Rust’s focus on performance.
 
+## Ressurser
+- Fra Rusts offiselle side
+  - [Editor-verktøy](https://www.rust-lang.org/tools)
+  - [Brukerforumet](https://users.rust-lang.org)
+  - [Discord-kanal](https://discordapp.com/invite/rust-lang)
+  - [Rust by example](https://doc.rust-lang.org/rust-by-example/index.html)
+  - https://www.rust-lang.org/what/wasm
+- Crates som man kan bruke
+  - [Diverse algoritmer som er implementert i Rust](https://crates.io/categories/algorithms)
 
 ## Stikkord som du vil få kjennskap til
 - Shared Array Buffer
 - JavaScript-modules
-
-## Nødvendige verktøy
-- **rustup** - Runtime
-- **rustc** - Kompilator
-- **cargo** - Pakkestyrer tilsvarende npm for node
-- **wasm-pack** - Byggeverktøy som gjør det mulig å kompilere til WebAssembly
-
-**Quick-start:**
-```bash
-# https://www.rust-lang.org/tools/install
-curl https://sh.rustup.rs -sSf | sh
-
-# https://rustwasm.github.io/wasm-pack/installer/
-curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
-
-# https://github.com/arzmir/2019-stromstad-wasm-workshop
-git clone https://github.com/arzmir/2019-stromstad-wasm-workshop.git
-```
 
 ## Oppgaver
 1. Kompilere Rust-kode til Wasm
@@ -50,3 +39,7 @@ git clone https://github.com/arzmir/2019-stromstad-wasm-workshop.git
 
 ## Idéer som kan utforskes
 - Hente en liste med navn fra server og se om man kan øke hastigheten på sortering sammenlignet JavaScript ved å streame dette direkte til Shared Array Buffer samtidig som man laster inn initiell data.
+
+## Fartsdumper
+- `WebAssembly.instantiateStreaming` bryr seg om MIME-type, `.instantiate` gjer ikkje. Om man går for super-simpel lokal web-server med t.d. **live-server** så bruk sistnevnte metode.
+- Ikkje bruk Wasm for mikrosaker, det er ein overhead på det.
