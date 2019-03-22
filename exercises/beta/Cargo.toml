@@ -1,0 +1,12 @@
+[package]
+name = "beta"
+version = "0.1.0"
+authors = ["René Räisänen <rene.raisanen@knowit.no>"]
+edition = "2018"
+
+[dependencies]
+
+[lib]
+name = "2019_wasm_workshop_beta"
+path = "src/beta.rs"
+crate-type = ['cdylib']
