@@ -32,7 +32,8 @@ Webassembly-filer blir relativt store fordi de pakker med seg alt det dei treng 
 ```rust
 // src/beta.rs
 
-// Legg til pub extern "C"
+// Legg til no_mangle makroen, samt pub extern "C"
+#[no_mangle]
 pub extern "C" fn multiply(a: u32, b: u32) -> u32 {
     a * b
 }
