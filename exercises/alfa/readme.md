@@ -41,9 +41,17 @@ nvm use 10
 
 ### Live-server - ([npm-repo](https://www.npmjs.com/package/live-server))
 Installerer:
-- **live-server** - Liten node webserver sånn at man får lov til å hente wasm-filer i fetch-kall
+- **live-server** - Liten node webserver sånn at man får lov til å hente wasm-filer i fetch-kall. Man kan velge å installere globalt, lokalt i mappa ein jobbar i, eller berre kjøre den via npx (lastes ned, installeres midlertidig, og avinstalleres med en gang man terminerer).
+
 ```bash
+# globalt
 npm install -g live-server
+
+# lokalt
+npm install live-server
+
+# npx
+npx live-server [--options]
 ```
 
 ## Lager oss eit lite Rust-prosjekt
