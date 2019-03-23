@@ -18,9 +18,25 @@ For å legge til rette for at man skal kunne flytte seg mellom Villages så foku
   - [Brukerforumet](https://users.rust-lang.org)
   - [Discord-kanal](https://discordapp.com/invite/rust-lang)
   - [Rust by example](https://doc.rust-lang.org/rust-by-example/index.html)
-  - https://www.rust-lang.org/what/wasm
+  - [Om Wasm](https://www.rust-lang.org/what/wasm)
+
 - Crates som man kan bruke
   - [Diverse algoritmer som er implementert i Rust](https://crates.io/categories/algorithms)
+
+- Talks
+  - [A cartoon intro to WebAssembly](https://www.youtube.com/watch?v=HktWin_LPf4)
+  - [What WebAssembly means for React](https://www.youtube.com/watch?v=3GHJ4cbxsVQ)
+  - [Practical WebAssembly](https://www.youtube.com/watch?v=bac0dGQbUto)
+  - [WebAssembly Thread](https://www.youtube.com/watch?v=zgOGZgAPUjQ)
+  - [Moving a 30 Year Code Base to the Web](https://www.infoq.com/presentations/autocad-webassembly)
+
+# Nokre demoer som viser kva som som går an
+- [Tanks implementer med Unity](https://webassembly.org/demo/Tanks/)
+- [AutoCAD på web](https://web.autocad.com/login)
+- [Bilderegidgering m/hastighetssammeligning](https://davidmcneil.github.io/the-rusty-web/)
+
+
+
 
 ## Stikkord som du vil få kjennskap til
 - Shared Array Buffer
