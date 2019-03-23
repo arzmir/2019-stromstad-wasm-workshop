@@ -51,3 +51,20 @@ Da får vi ein `/pkg` som inneholder:
     `-- package.json
 ```
 
+### Sette opp prosjektet som ein enkel webapp
+```bash
+npm init wasm-app www
+```
+```
+# tree www
+www
+|-- LICENSE-APACHE
+|-- LICENSE-MIT
+|-- README.md
+|-- bootstrap.js
+|-- index.html
+|-- index.js
+|-- package-lock.json
+|-- package.json
+`-- webpack.config.js
+```
