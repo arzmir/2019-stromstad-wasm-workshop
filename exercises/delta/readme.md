@@ -35,3 +35,19 @@ pub extern "C" fn return_string(my_text :&str) -> String {
 }
 ```
 
+### Pakking av dette som ein npm-modul vi kan importere
+```bash
+wasm-pack build
+```
+
+Da får vi ein `/pkg` som inneholder:
+```
+`-- pkg
+    |-- 2019_wasm_workshop_delta.d.ts
+    |-- 2019_wasm_workshop_delta.js
+    |-- 2019_wasm_workshop_delta_bg.d.ts
+    |-- 2019_wasm_workshop_delta_bg.wasm
+    |-- README.md
+    `-- package.json
+```
+
