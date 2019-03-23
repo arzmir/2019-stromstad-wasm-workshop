@@ -3,6 +3,35 @@ WebAssembly har per dags dato kun native støtte for fire primitiver, 32 bit int
 
 MEN. Det er ein del boilerplate som må til for å kunne kommunisere på denne måte, så det finst naturligvis bibliotek for dette. Vi sett i gang.
 
-## Bindgen-macro
-## Kalle funksjoner i javascript _fra_ wasm
+## wasm-bindgen
+Den eklaste måten å lage funksjoner som kan returnere annen data enn tall er via `wasm-bindgen`. Det er eit par steg vi må gjennom for å benytte det.
+
+Gitt følgende struktur:
+```
+|-- Cargo.lock
+|-- Cargo.toml
+|-- readme.md
+`-- src
+    `-- delta.rs
+```
+
+La oss gå gjennom og generere det som trengs av kode via `wasm-bindgen`. Først må vi redigere `Cargo.toml` og `delta.rs`
+
+### `cargo.toml`
+```toml
+# Legg til under dependency
+
+[dependencies]
+wasm-bindgen = "0.2.29"
+```
+
+### `delta.rs`
+```rust
+use wasm_bindgen::prelude::*;
+
+#[wasm_bindgen]
+pub extern "C" fn return_string(my_text :&str) -> String {
+  return my_text;
+}
+```
 
