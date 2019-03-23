@@ -2,6 +2,8 @@
 - **Laget for** Knowit Objectnet - Fagseminar
 - **Holdt på** Strömstad Spa, Sverige - 23. mars 2019
 
+![Wasmness!](wasmness.jpg)
+
 ## Abstract
 WebAssembly har vært på manges tunger de siste årene. I det tilhørende foredraget gikk vi gjennom hva WebAssembly er, samt når og hvorfor man skulle ønske å benytte det. I workshoppen fokuserer vi på det grunnleggende - Å kompilere Rust-kode til en Wasm-modul som vi skal ta i bruk på en webside gjennom JavaScript.
 
