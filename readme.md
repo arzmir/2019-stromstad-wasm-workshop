@@ -43,11 +43,10 @@ For å legge til rette for at man skal kunne flytte seg mellom Villages så foku
 - JavaScript-modules
 
 ## Oppgaver
-1. Kompilere Rust-kode til Wasm
-2. Ta i bruk den pakkede modulen i JS
-3. Kalle JavaScript-funksjoner fra Wasm-modulen
-4. Benytte Shared Array Buffer for annen data enn tall
-5.
+1. [Installere nødvendige verktøy og initialisere et Rust-prosjekt](/exercises/alfa/readme.md)
+2. [Men dette er jo ein Wasm-workshop?](/exercises/beta/readme.md)
+3. [Highway to the d.. web](/exercises/charlie/readme.md)
+4. [But, but, but... Strings?](/exercises/delta/readme.md)
 
 
 ## Ekstraoppgaver
