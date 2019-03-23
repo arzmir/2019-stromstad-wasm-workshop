@@ -9,8 +9,13 @@ For å legge til rette for at man skal kunne flytte seg mellom Villages så foku
 
 **Omtrentlig tidsbruk:** 30-45 min
 
-
 > The dream of WebAssembly is not to kill JavaScript but to work alongside of it, to help super charge processing-heavy or low-level tasks — tasks that benefit from Rust’s focus on performance.
+
+## Oppgaver
+1. [Installere nødvendige verktøy og initialisere et Rust-prosjekt](/exercises/alfa/readme.md)
+2. [Men dette er jo ein Wasm-workshop?](/exercises/beta/readme.md)
+3. [Highway to the d.. web](/exercises/charlie/readme.md)
+4. [But, but, but... Strings?](/exercises/delta/readme.md)
 
 ## Ressurser
 - Fra Rusts offiselle side
@@ -34,20 +39,6 @@ For å legge til rette for at man skal kunne flytte seg mellom Villages så foku
 - [Tanks implementer med Unity](https://webassembly.org/demo/Tanks/)
 - [AutoCAD på web](https://web.autocad.com/login)
 - [Bilderegidgering m/hastighetssammeligning](https://davidmcneil.github.io/the-rusty-web/)
-
-
-
-
-## Stikkord som du vil få kjennskap til
-- Shared Array Buffer
-- JavaScript-modules
-
-## Oppgaver
-1. [Installere nødvendige verktøy og initialisere et Rust-prosjekt](/exercises/alfa/readme.md)
-2. [Men dette er jo ein Wasm-workshop?](/exercises/beta/readme.md)
-3. [Highway to the d.. web](/exercises/charlie/readme.md)
-4. [But, but, but... Strings?](/exercises/delta/readme.md)
-
 
 ## Ekstraoppgaver
 - Pakke og publisere en wasm-modul til npm (https://rustwasm.github.io/wasm-pack/book/tutorials/npm-browser-packages/index.html)
