@@ -68,3 +68,32 @@ www
 |-- package.json
 `-- webpack.config.js
 ```
+
+### Linke modulene og skifte ut kva som kjøres
+```bash
+# Sette opp /pkg som lokal npm modul
+cd ./pkg && npm link && cd ..
+# npm notice created a lockfile as package-lock.json. You should commit this # file.
+# npm WARN delta@0.1.0 No repository field.
+# npm WARN delta@0.1.0 No license field.
+#
+# up to date in 2.894s
+# found 0 vulnerabilities
+#
+# ..../lib/node_modules/delta -> .../2019-stromstad-wasm-workshop/exercises/delta/pkg
+```
+
+### Redigere `index.js` til å bruke ønsket pakke
+```javascript
+import * as wasm from "delta";
+
+console.log(wasm.return_string("Wheeee... Roundtrip through WASM!"));
+```
+
+### Installere dependencies, linke pakken vår og kjøre
+```bash
+cd www
+npm install
+npm link delta
+npm run start
+```
