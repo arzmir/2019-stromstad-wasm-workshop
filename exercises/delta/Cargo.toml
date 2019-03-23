@@ -1,0 +1,13 @@
+[package]
+name = "delta"
+version = "0.1.0"
+authors = ["René Räisänen <rene.raisanen@knowit.no>"]
+edition = "2018"
+
+[dependencies]
+wasm-bindgen = "0.2.29"
+
+[lib]
+name = "2019_wasm_workshop_delta"
+path = "src/delta.rs"
+crate-type = ['cdylib']
